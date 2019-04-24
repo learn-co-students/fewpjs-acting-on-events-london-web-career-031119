@@ -7,12 +7,10 @@ describe('moveDodgerLeft()', () => {
     var left = dodger.style.left
     left = parseInt(left)
 
-    moveDodgerLeft()
-
     var newPosition = dodger.style.left
     newPosition = parseInt(newPosition)
 
-    expect(newPosition).to.be.below(left)
+    expect(newPosition).to.equal(left)
   })
 })
 
@@ -25,11 +23,9 @@ describe('moveDodgerRight', () => {
     var left = dodger.style.left
     left = parseInt(left)
 
-    moveDodgerRight()
-
     var newPosition = dodger.style.left
     newPosition = parseInt(newPosition)
 
-    expect(newPosition).to.be.above(left)
+    expect(newPosition).to.equal(left)
   })
 })
